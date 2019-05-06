@@ -10,6 +10,8 @@
 /test/version_tmp/
 /tmp/
 /selectionTest/
+/learnenough/toy_app/
+/learnenough/hello_app/
 
 # Used by dotenv library to load environment variables.
 # .env

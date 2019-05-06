@@ -1,0 +1,31 @@
+/**** MOBILE FIRST DESIGN = 320px ****/
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+/*==================================[GENERAL]==*/
+h1{
+  font-size:  6.5em;
+}
+.sub-title{
+  font-size:  4.5em;
+}
+p{
+  color: red;
+}
+#btn-login{
+  margin-top: 15px;
+  font-size: 4em;
+}
+
+@media only screen and (min-width: 1140px) {
+  h1{
+    font-size:  3.5em;
+  }
+  .sub-title{
+    font-size:  2.5em;
+  }
+  p{
+    color: black;
+  }
+  #btn-login{
+    font-size: 1.5em;
+  }
+}

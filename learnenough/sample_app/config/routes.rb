@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  default_url_options host: "example.com"
   root 'static_pages#home'
   get  '/help',    to: 'static_pages#help' , as: 'helf'
   get  '/about',   to: 'static_pages#about'
@@ -12,5 +13,6 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
   
   resources :users
+  resources :account_activations, only: %i[ edit ]
 
 end

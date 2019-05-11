@@ -11,6 +11,7 @@ class UserMailer < ApplicationMailer
     mail to: user.email, subject: 'Sample App Account Activation'
   end
 
+
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #

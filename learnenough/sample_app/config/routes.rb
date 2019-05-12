@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+  get 'password_resets/edit'
   default_url_options host: "example.com"
   root 'static_pages#home'
   get  '/help',    to: 'static_pages#help' , as: 'helf'
@@ -14,5 +16,6 @@ Rails.application.routes.draw do
   
   resources :users
   resources :account_activations, only: %i[ edit ]
+  resources :password_resets,     only: [:new, :create, :edit, :update]
 
 end
